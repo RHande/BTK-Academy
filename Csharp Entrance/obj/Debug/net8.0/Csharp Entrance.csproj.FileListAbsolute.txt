@@ -12,3 +12,4 @@
 /Users/hande/RiderProjects/BTK Academy/Csharp Entrance/obj/Debug/net8.0/Csharp Entrance.pdb
 /Users/hande/RiderProjects/BTK Academy/Csharp Entrance/obj/Debug/net8.0/Csharp Entrance.genruntimeconfig.cache
 /Users/hande/RiderProjects/BTK Academy/Csharp Entrance/obj/Debug/net8.0/ref/Csharp Entrance.dll
+/Users/hande/RiderProjects/BTK Academy/Csharp Entrance/obj/Debug/net8.0/Csharp Entrance.sourcelink.json
