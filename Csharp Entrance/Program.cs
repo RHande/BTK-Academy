@@ -1,5 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
+using System.Runtime.InteropServices.JavaScript;
+
 Console.WriteLine("Hello, World!");
 
 
@@ -173,6 +175,50 @@ Console.WriteLine(message.Trim().Length); // Outputs 17
 Console.WriteLine(message.Trim().ToUpper()); // Outputs "I'M LEARNING C#"
 Console.WriteLine(message.Trim().ToLower()); // Outputs "i'm learning c#"
 Console.WriteLine(message.Trim().Substring(6)); // Outputs "learning C#" This is same as message.Substring(6);
+
+
+//Date Time
+
+DateTime myDateTime = DateTime.Now;
+Console.WriteLine(myDateTime);//Outputs the current date and time
+
+Console.WriteLine(myDateTime.Date);//Outputs the current date
+Console.WriteLine(myDateTime.Day);//Outputs the current day
+Console.WriteLine(myDateTime.Month);//Outputs the current month
+Console.WriteLine(myDateTime.Year);//Outputs the current year
+Console.WriteLine(myDateTime.Hour);//Outputs the current hour
+Console.WriteLine(myDateTime.Minute);//Outputs the current minute
+Console.WriteLine(myDateTime.Second);//Outputs the current second
+Console.WriteLine(myDateTime.Millisecond);//Outputs the current millisecond
+Console.WriteLine(myDateTime.DayOfWeek);//Outputs the current day of the week
+Console.WriteLine(myDateTime.DayOfYear);//Outputs the current day of the year
+
+DateTime myDateTime1 = new DateTime(2021, 12, 31); //We can also use DateTime myDateTime1 = new DateTime(2021, 12, 31, 0, 0, 0); to set the time
+Console.WriteLine(myDateTime1);//Outputs 31.12.2021 00:00:00    
+
+DateTime myDateTime2 = myDateTime1.AddYears(3);
+Console.WriteLine(myDateTime2.Year);//Outputs 2024
+DateTime myDateTime3 = myDateTime1.AddMonths(3);
+Console.WriteLine(myDateTime3.Month);//Outputs 3
+
+
+TimeSpan distance = myDateTime - myDateTime1;
+Console.WriteLine(distance);//Outputs the difference between myDateTime and myDateTime1 > 981.00:16:00.0000000 means 981 days 16 hours
+Console.WriteLine(distance.Days);//Outputs the difference between the days of myDateTime and myDateTime1 > 981
+Console.WriteLine(distance.Hours);//Outputs the difference between the hours of myDateTime and myDateTime1 > 16
+Console.WriteLine(distance.TotalDays);//Outputs the difference between the total days of myDateTime and myDateTime1 > 981.66666666666663
+Console.WriteLine(distance.TotalHours);//Outputs the difference between the total hours of myDateTime and myDateTime1 > 23560
+
+int yearDifference = myDateTime.Year - myDateTime1.Year;
+Console.WriteLine(yearDifference);//Outputs the difference between the years of myDateTime and myDateTime1 > 1
+
+/*
+int dif = myDateTime - myDateTime1;
+Console.WriteLine(dif);//We can not use the - operator with DateTime type. We can only use it with TimeSpan type
+*/
+
+
+
 
 
 
