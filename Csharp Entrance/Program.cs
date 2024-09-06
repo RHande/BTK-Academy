@@ -131,5 +131,48 @@ Console.WriteLine(maas1.HasValue);//Shows False
 Console.WriteLine(maas1.GetValueOrDefault());//Shows 0. Because the default value of int is 0
 
 
+//String Methods
+
+string myString = "Hello World";
+Console.WriteLine(myString.ToUpper()); // Outputs "HELLO WORLD"
+
+string myString1 = "Hello";
+string myString2 = "World";
+Console.WriteLine(string.Concat(myString1, myString2)); // Outputs "HelloWorld"
+
+int characterCount = myString.Length;
+Console.WriteLine(characterCount); // Outputs 11
+
+string lower =myString.ToLower();
+Console.WriteLine(lower); // Outputs "hello world"
+
+string message = "    I'm learning C#    ";
+string trim = message.Trim();//Or we can use string trim = message.TrimStart(); or string trim = message.TrimEnd();
+Console.WriteLine(trim); // Outputs "I'm learning C#
+
+Console.WriteLine(message.Substring(6)); // Outputs "learning C#"
+Console.WriteLine(message.Substring(6, 8)); // Outputs "learning"
+Console.WriteLine(message.IndexOf("C#")); // Outputs 13
+Console.WriteLine(message.IndexOf("C#", 10)); // Outputs 13 If the search string is not found, the IndexOf method returns -1
+Console.WriteLine(message.LastIndexOf("C#")); // Outputs 13
+Console.WriteLine(message.Split(" ")[1]); // Outputs "I'm"
+Console.WriteLine(message.Replace("C#", "C-Sharp")); // Outputs "I'm learning C-Sharp"
+Console.WriteLine(message.Split(" "));//Outputs System.String[]
+Console.WriteLine(message.Split(" ")[2]); // Outputs "C#"
+Console.WriteLine(message.Remove(6)); // Outputs "I'm le"
+Console.WriteLine(message.StartsWith("I")); // Outputs True
+Console.WriteLine(message.Contains("C#")); // Outputs True
+Console.WriteLine(message.EndsWith("C#")); // Outputs True
+Console.WriteLine(message.Insert(6, "not ")); // Outputs "I'm not learning C#"
+Console.WriteLine(message.PadLeft(25)); // Outputs "    I'm learning C#    "
+Console.WriteLine(message.PadRight(25)); // Outputs "    I'm learning C#    "
+Console.WriteLine(message.PadLeft(25, '*')); // Outputs "****I'm learning C#    "
+Console.WriteLine(message.PadRight(25, '*')); // Outputs "    I'm learning C#****"
+Console.WriteLine(message.Length); // Outputs 22
+Console.WriteLine(message.Trim().Length); // Outputs 17
+Console.WriteLine(message.Trim().ToUpper()); // Outputs "I'M LEARNING C#"
+Console.WriteLine(message.Trim().ToLower()); // Outputs "i'm learning c#"
+Console.WriteLine(message.Trim().Substring(6)); // Outputs "learning C#" This is same as message.Substring(6);
+
 
 
