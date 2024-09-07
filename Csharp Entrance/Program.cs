@@ -217,6 +217,154 @@ int dif = myDateTime - myDateTime1;
 Console.WriteLine(dif);//We can not use the - operator with DateTime type. We can only use it with TimeSpan type
 */
 
+//Arrays
+
+int[] myArray = { 1, 2, 3, 4, 5 };
+Console.WriteLine(myArray[0]); // Outputs 1
+Console.WriteLine(myArray[1]); // Outputs 2
+
+int[] myArray1 = new int[5];
+myArray1[0] = 1;
+myArray1[1] = 2;
+myArray1[2] = 3;
+myArray1[3] = 4;
+myArray1[4] = 5;
+Console.WriteLine(myArray1[0]); // Outputs 1
+Console.WriteLine(myArray1[1]); // Outputs 2
+
+int[] myArray2 = new int[5] { 1, 2, 3, 4, 5 };
+Console.WriteLine(myArray2[0]); // Outputs 1
+Console.WriteLine(myArray2[1]); // Outputs 2
+
+
+int[] myArray3 = new int[] { 1, 2, 3, 4, 5 };
+Console.WriteLine(myArray3[0]); // Outputs 1
+Console.WriteLine(myArray3[1]); // Outputs 2
+
+//We can also use the foreach loop to iterate over an array
+
+int[] myArray4 = { 1, 2, 3, 4, 5 };
+foreach (int number in myArray4)
+{
+    Console.WriteLine(number);
+}
+
+//We can also use the Length property to get the length of an array
+
+int[] myArray5 = { 1, 2, 3, 4, 5 };
+Console.WriteLine(myArray5.Length); // Outputs 5
+
+//We can also use the Rank property to get the rank of an array
+
+int[] myArray6 = { 1, 2, 3, 4, 5 };
+Console.WriteLine(myArray6.Rank); // Outputs 1
+
+//We can also use the GetLength method to get the length of a specific dimension of an array
+
+int[,] myArray7 = new int[2, 3] { { 1, 2, 3 }, { 4, 5, 6 } };
+Console.WriteLine(myArray7.GetLength(0)); // Outputs 2
+Console.WriteLine(myArray7.GetLength(1)); // Outputs 3
+
+//We use all of example for string methods with arrays
+
+
+//Array Methods
+
+string[] cities = { "Ankara", "Istanbul", "Izmir", "Bursa", "Antalya" };
+cities.SetValue("Sakarya", 0);
+Console.WriteLine(cities[0]); // Outputs "Sakarya"
+Console.WriteLine(cities.GetValue(0)); // Outputs "Sakarya"
+Console.WriteLine(cities.GetValue(1)); // Outputs "Istanbul"
+
+Array.Sort(cities);//Sorts the array in alphabetical order. This is same for int and it is used to sort the array in ascending order
+foreach (string city in cities)
+{
+    Console.WriteLine(city);
+}//outputs Antalya Bursa Istanbul Izmir Sakarya
+
+Array.Reverse(cities);//Reverses the array. This is same for int and it is used to reverse the array in descending order
+foreach (string city in cities)
+{
+    Console.WriteLine(city);
+}//outputs Sakarya Izmir Istanbul Bursa Antalya
+
+
+//Array Slicing
+
+int[] numbers = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+int[] numbers1 = new int[5];
+Array.Copy(numbers, 0, numbers1, 0, 5);
+foreach (int number in numbers1)
+{
+    Console.WriteLine(number);
+}//outputs 1 2 3 4 5
+
+int[] numbers2 = numbers[0..3];
+foreach (int number in numbers2)
+{
+    Console.WriteLine(number);
+}//outputs 1 2 3
+
+foreach (int a in numbers[..3])
+{
+    Console.WriteLine(a);
+}//outputs 1 2 3
+
+
+foreach (int b in numbers[7..])
+{
+    Console.WriteLine(b);
+}//outputs 8 9 10
+
+
+foreach (int c in numbers[2..^3])
+{
+    Console.WriteLine(c);
+}//outputs 3 4 5 6 7
+
+
+//Multidimensional Arrays
+
+int[,] myArray8 = new int[2, 3] { { 1, 2, 3 }, { 4, 5, 6 } };
+Console.WriteLine(myArray8[0, 0]); // Outputs 1
+Console.WriteLine(myArray8[1,0]);//Outputs 4
+
+string[] students = new[] { "Ali", "Ahmet", "Canan" };
+int[,] nots = new int[3, 3];
+
+//Ali
+nots[0, 0] = 50;
+nots[0, 1] = 60;
+nots[0, 2] = 70;
+
+
+//Ahmet
+nots[1, 0] = 60;
+nots[1, 1] = 80;
+nots[1, 2] = 90;
+
+//Canan
+nots[2, 0] = 50;
+nots[2, 1] = 70;
+nots[2, 2] = 30;
+
+int ortAli = (nots[0,0] + nots[0,1] + nots[0,2])/3;
+int ortAhmet = (nots[1,0] + nots[1,1] + nots[1,2])/3;
+int ortCanan = (nots[2,0] + nots[2,1] + nots[2,2])/3;
+
+Console.WriteLine($"{students[0]} isimli öğrencinin not ortalaması: {ortAli}");
+Console.WriteLine($"{students[1]} isimli öğrencinin not ortalaması: {ortAhmet}");
+Console.WriteLine($"{students[2]} isimli öğrencinin not ortalaması: {ortCanan}");
+
+
+
+
+
+
+
+
+
+
 
 
 
