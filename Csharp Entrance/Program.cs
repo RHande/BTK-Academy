@@ -372,12 +372,90 @@ Console.WriteLine(takimlar[rand]);//Outputs a random team name
 //Random numbers are used in games, simulations, cryptography, and more.
 
 
+//Switch Case
+
+int day = DateTime.Now.DayOfWeek == 0 ? 7 : (int)DateTime.Now.DayOfWeek;
+switch (day)
+{
+    case 1:
+        Console.WriteLine("Monday");
+        break;
+    case 2:
+        Console.WriteLine("Tuesday");
+        break;
+    case 3:
+        Console.WriteLine("Wednesday");
+        break;
+    case 4:
+        Console.WriteLine("Thursday");
+        break;
+    case 5:
+        Console.WriteLine("Friday");
+        break;
+    case 6:
+        Console.WriteLine("Saturday");
+        break;
+    case 7:
+        Console.WriteLine("Sunday");
+        break;
+    default:
+        Console.WriteLine("Invalid day");
+        break;
+}
 
 
+int mounth = DateTime.Now.Month;
 
+switch (mounth)
+{
+    case 1:
+        Console.WriteLine("January");
+        break;
+    case 2:
+        Console.WriteLine("February");
+        break;
+    case 3:
+        Console.WriteLine("March");
+        break;
+    case 4:
+        Console.WriteLine("April");
+        break;
+    case 5:
+        Console.WriteLine("May");
+        break;
+    case 6:
+        Console.WriteLine("June");
+        break;
+    case 7:
+        Console.WriteLine("July");
+        break;
+    case 8:
+        Console.WriteLine("August");
+        break;
+    case 9:
+        Console.WriteLine("September");
+        break;
+    case 10:
+        Console.WriteLine("October");
+        break;
+    case 11:
+        Console.WriteLine("November");
+        break;
+    case 12:
+        Console.WriteLine("December");
+        break;
+    default:
+        Console.WriteLine("Invalid mounth");
+        break;
+}
 
-
-
+string result;
+int sayi = 10;
+result = (sayi %2 ==0) ?
+          (sayi>0) ? "Positive and Even": "Negative and Even":
+          (sayi>0) ? "Positive and Odd": "Negative and Odd";
+Console.WriteLine(result);
+//We use the ternary operator much more simple situations. If the situation is more complex, we use the if-else statement.
 
 
 
