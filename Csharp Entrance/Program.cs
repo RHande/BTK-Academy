@@ -1,5 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
+using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices.JavaScript;
 
 Console.WriteLine("Hello, World!");
@@ -458,5 +459,257 @@ Console.WriteLine(result);
 //We use the ternary operator much more simple situations. If the situation is more complex, we use the if-else statement.
 
 
+//Loops
+
+//for loop
+for (int i = 0; i < 5; i++)
+{
+    Console.WriteLine(i);
+}
+
+var toplam = 0;
+for(int i=1; i<=100; i++)
+{
+    toplam += i;
+}
+Console.WriteLine(toplam);//If I write this code, it will show the sum of the numbers from 1 to 100
+//But if I write this code in the loop, it will show the sum of the numbers from 1 to 100 for each iteration
+
+//If I want to sum the odd numbers from 1 to 100, I can write the code like this
+var sumodd = 0;
+for (int i = 1; i <= 100; i++)
+{
+    if (i % 2 != 0)
+    {
+        sumodd += i;//sumodd = sumodd + i;
+    }
+}
+Console.WriteLine(sumodd);//Outputs 2500
+
+var sumeven = 0;
+for (int i = 1; i <= 100; i++)
+{
+    if (i % 2 == 0)
+    {
+        sumeven += i;//sumeven = sumeven + i;
+    }
+}
+Console.WriteLine(sumeven);//Outputs 2550
 
 
+Console.Write("Enter a start number: ");
+int start = Convert.ToInt32(Console.ReadLine());
+Console.Write("Enter an end number: ");
+int end = Convert.ToInt32(Console.ReadLine());
+int sum = 0;
+for (int i = start; i <= end; i++)
+{
+    sum += i;
+}
+Console.WriteLine($"Sum of numbers from start number to end number is: {sum}");
+
+string [] names = { "Ali", "Ahmet", "Can", "Yelda", "Selda" };
+for (int i = 0; i < names.Length; i++)
+{
+    Console.WriteLine(names[i]);
+}
+
+int[] numbers3 = { 1, 3, 4, 34, 41, 56, 89 };
+for(int i=0; i< numbers3.Length; i++)
+{
+    if (numbers3[i] % 3 == 0)
+    {
+        Console.WriteLine(numbers3[i]);
+    }
+}
+
+//while loop
+int j = 0;
+while (j < 5)
+{
+    Console.WriteLine(j);
+    j++;
+}
+
+var secim = "e";
+var sayac = 0;
+var top = 0;
+while (secim == "e")
+{
+    Console.Write("Enter a number: ");
+    var number = Convert.ToInt32(Console.ReadLine());
+    top += number;
+    sayac++;
+    Console.Write("Do you want to continue? (e/h): ");
+    secim = Console.ReadLine();
+}
+Console.WriteLine($"Sum of the numbers ({sayac} number) you entered: {top}");
+
+
+//break and continue
+
+string isim = "Rahime Hande";
+for (int i = 0; i < isim.Length; i++)
+{
+    if (isim[i] == ' ')
+    {
+        break;//If the character is space, the loop will be terminated
+    }
+    Console.WriteLine(isim[i]);
+}//Outputs R a h i m e
+
+string isim1 = "Rahime Hande";
+for (int i = 0; i < isim1.Length; i++)
+{
+    if (isim1[i] == ' ')
+    {
+        continue;//If the character is space, the loop will be skipped. Which means the space character will not be printed
+    }
+    Console.WriteLine(isim1[i]);
+}//Outputs R a h i m e H a n d e
+
+//If we use while loop instead of for loop, the output will be the same and we used the break and continue keywords in the while loop:
+
+string isim2 = "Rahime Hande";
+int k = 0;
+while (k < isim2.Length)
+{
+    if (isim2[k] == ' ')
+    {
+        break;
+    }
+    Console.WriteLine(isim2[k]);
+    k++;
+}//Outputs R a h i m e
+
+string isim3 = "Rahime Hande";
+int l = 0;
+while (l < isim3.Length)
+{
+    if (isim3[l] == ' ')
+    {
+        l++;//If we do not write this line, the loop will be infinite. Because the loop will be terminated when the character is space. But the loop will be skipped when the character is space. So the loop will be infinite. To prevent this, we have to write this line
+        continue;
+    }
+    Console.WriteLine(isim3[l]);
+    l++;
+}//Outputs R a h i m e H a n d e
+
+
+//Number Guessing Game
+/*
+Random random1 = new Random();
+int randomNumber2 = random1.Next(1, 101);
+int guess = 0;
+int count = 0;
+while (guess != randomNumber2)
+{
+    Console.Write("Enter a number between 1 and 100: ");
+    guess = Convert.ToInt32(Console.ReadLine());
+    count++;
+    if (guess < randomNumber2)
+    {
+        Console.WriteLine("Enter a higher number");
+    }
+    else if (guess > randomNumber2)
+    {
+        Console.WriteLine("Enter a lower number");
+    }
+    else
+    {
+        Console.WriteLine($"Congratulations! You found the number in {count} tries");
+    }
+}
+*/
+
+//If we want to play the game again, we can write the code like this:
+
+Random random2 = new Random();
+int randomNumber3 = random2.Next(1, 101);
+while (true)
+{
+    int count1 = 5;
+    while (count1 > 0)
+    {
+        Console.Write($"Enter a number between 1 and 100 (You can try only {count1} times): ");
+        int guess1 = Convert.ToInt32(Console.ReadLine());
+        count1--;
+        if (guess1 < randomNumber3)
+        {
+            Console.WriteLine("Enter a higher number");
+        }
+        else if (guess1 > randomNumber3)
+        {
+            Console.WriteLine("Enter a lower number");
+        }
+        else
+        {
+            Console.WriteLine($"Congratulations! You found the number with {5 - count1} tries remaining");
+            break;
+        }
+    }
+    if (count1 == 0)
+    {
+        Console.WriteLine("You lost! The number was: " + randomNumber3);
+    }
+    Console.Write("Do you want to play again? (e/h): ");
+    string secim1 = Console.ReadLine();
+    if (secim1 == "h")
+    {
+        break;
+    }
+    randomNumber3 = random2.Next(1, 101);
+}
+
+
+//do-while loop
+
+int m = 0;
+do//The loop will be executed at least once. Because the condition is checked after the loop is executed.
+//So if the condition is false, the loop will be executed once.
+{
+    Console.WriteLine(m);
+    m++;
+} while (m < 5);
+
+
+Console.Write("Quantity: ");
+int quantity = Convert.ToInt32(Console.ReadLine());
+string[] products = new string[quantity];
+int ab = 0;
+do
+{
+    Console.Write("Enter a product name: ");
+    products[ab] = Console.ReadLine() ?? string.Empty;
+    ab++;
+} while (ab < quantity);
+
+Console.WriteLine("Products:");
+foreach (string product in products)
+{
+    Console.WriteLine(product);
+}
+
+
+//For each loop
+
+string[] cities1 = { "Ankara", "Istanbul", "Izmir", "Bursa", "Antalya" };
+foreach (string city in cities1)
+{
+    Console.WriteLine(city);
+}//outputs Ankara Istanbul Izmir Bursa Antalya
+
+string myName = "Rahime Hande";
+foreach (var harf in myName)
+{
+    Console.WriteLine(harf);    
+}//outputs R a h i m e H a n d e
+
+
+//If we want to get the index of the characters, we can write the code like this:
+
+string myName1 = "Rahime Hande";
+for (int i = 0; i < myName1.Length; i++)
+{
+    Console.WriteLine($"{myName1[i]} - {i}");
+}//outputs R - 0 a - 1 h - 2 i - 3 m - 4 e - 5   - 6 H - 7 a - 8 n - 9 d - 10 e - 11
