@@ -357,7 +357,19 @@ Console.WriteLine($"{students[1]} isimli öğrencinin not ortalaması: {ortAhmet
 Console.WriteLine($"{students[2]} isimli öğrencinin not ortalaması: {ortCanan}");
 
 
+//Random Numbers
 
+Random random = new Random();
+int randomNumber = random.Next();
+Console.WriteLine(randomNumber);//Outputs a random number > 0-2147483647
+
+int randomNumber1 = random.Next(100);
+Console.WriteLine(randomNumber1);//Outputs a random number > 0-99
+
+string[] takimlar = { "Galatasaray", "Fenerbahce", "Besiktas", "Trabzonspor", "Basaksehir" };
+int rand = random.Next(takimlar.Length);
+Console.WriteLine(takimlar[rand]);//Outputs a random team name
+//Random numbers are used in games, simulations, cryptography, and more.
 
 
 
