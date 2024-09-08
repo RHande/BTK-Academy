@@ -713,3 +713,38 @@ for (int i = 0; i < myName1.Length; i++)
 {
     Console.WriteLine($"{myName1[i]} - {i}");
 }//outputs R - 0 a - 1 h - 2 i - 3 m - 4 e - 5   - 6 H - 7 a - 8 n - 9 d - 10 e - 11
+
+
+//File Method - This is work only at Terminal
+
+/*
+StreamWriter sw = File.CreateText("my.txt"); 
+sw.WriteLine("Hello World"); //Creates a file named my.txt and writes "Hello World" to the file
+sw.Close();
+
+
+StreamReader sr = File.OpenText("my.txt");
+string line = sr.ReadLine();
+Console.WriteLine(line);
+
+var s = "";
+while ((s = sr.ReadLine()) != null) //Reads the file line by line until the end of the file
+{
+    Console.WriteLine(s);
+}
+
+sr.Close();
+//Instead of close method, we can use using statement to close the file automatically:
+
+
+using (StreamWriter sr1 = File.AppendText("my.txt"))
+{
+    sr1.WriteLine("Hello World");//Writes "Hello World" to the file
+    
+}//The file will be closed automatically after the using statement is executed
+
+
+File.WriteAllText("my.txt", "Hello World");//Writes "Hello World" to the file and deletes the previous content of the file
+File.AppendAllText("my.txt", " How are you?");//Appends " How are you?" to the file
+*/
+
