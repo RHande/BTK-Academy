@@ -1,0 +1,15 @@
+/Users/hande/RiderProjects/BTK Academy/Collections/bin/Debug/net8.0/Collections
+/Users/hande/RiderProjects/BTK Academy/Collections/bin/Debug/net8.0/Collections.deps.json
+/Users/hande/RiderProjects/BTK Academy/Collections/bin/Debug/net8.0/Collections.runtimeconfig.json
+/Users/hande/RiderProjects/BTK Academy/Collections/bin/Debug/net8.0/Collections.dll
+/Users/hande/RiderProjects/BTK Academy/Collections/bin/Debug/net8.0/Collections.pdb
+/Users/hande/RiderProjects/BTK Academy/Collections/obj/Debug/net8.0/Collections.GeneratedMSBuildEditorConfig.editorconfig
+/Users/hande/RiderProjects/BTK Academy/Collections/obj/Debug/net8.0/Collections.AssemblyInfoInputs.cache
+/Users/hande/RiderProjects/BTK Academy/Collections/obj/Debug/net8.0/Collections.AssemblyInfo.cs
+/Users/hande/RiderProjects/BTK Academy/Collections/obj/Debug/net8.0/Collections.csproj.CoreCompileInputs.cache
+/Users/hande/RiderProjects/BTK Academy/Collections/obj/Debug/net8.0/Collections.sourcelink.json
+/Users/hande/RiderProjects/BTK Academy/Collections/obj/Debug/net8.0/Collections.dll
+/Users/hande/RiderProjects/BTK Academy/Collections/obj/Debug/net8.0/refint/Collections.dll
+/Users/hande/RiderProjects/BTK Academy/Collections/obj/Debug/net8.0/Collections.pdb
+/Users/hande/RiderProjects/BTK Academy/Collections/obj/Debug/net8.0/Collections.genruntimeconfig.cache
+/Users/hande/RiderProjects/BTK Academy/Collections/obj/Debug/net8.0/ref/Collections.dll

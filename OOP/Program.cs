@@ -67,7 +67,7 @@ namespace MyStudents
                 Answer = "Python"
             };
             
-            var quetions = new Questions[] { q1, q2, q3 };
+            /*var quetions = new Questions[] { q1, q2, q3 };
             foreach (var question in quetions)
             {
                 Console.WriteLine(question.Question);
@@ -88,6 +88,10 @@ namespace MyStudents
                     Console.WriteLine("Wrong answer!");
                 }
             }
+            */
+            Console.WriteLine(q1.PrintQuestion());
+            Console.WriteLine(q2.PrintQuestion());
+            Console.WriteLine(q3.PrintQuestion());
         }
     }
 //First, we created a class called Student. This class has three properties: FullName, StudentID, and Branch.
@@ -115,6 +119,12 @@ namespace MyStudents
 }
 
     class Questions{ 
+          
+          public Questions()
+          {
+              this.ID = (new Random()).Next(11111, 99999);
+          }
+          public int ID { get; set; }
           public string Question { get; set; }
           public string[] Choises { get; set; }
           public string Answer { get; set; }
@@ -123,6 +133,20 @@ namespace MyStudents
           {
               return this.Answer == answer;
           }
+          
+          public string PrintQuestion()
+          {
+              string question = this.Question + "\n";
+                foreach (var choise in this.Choises)
+                {
+                    question += choise + "\n";
+                }
+                return question;
+          }
+          
+          
+          
+          
 }
 
 
