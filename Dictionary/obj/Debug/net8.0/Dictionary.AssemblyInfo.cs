@@ -10,12 +10,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("Collections")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("Dictionary")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e66f083f2696e73a828b16ba7d1fb90c3bb9894d")]
-[assembly: System.Reflection.AssemblyProductAttribute("Collections")]
-[assembly: System.Reflection.AssemblyTitleAttribute("Collections")]
+[assembly: System.Reflection.AssemblyProductAttribute("Dictionary")]
+[assembly: System.Reflection.AssemblyTitleAttribute("Dictionary")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // MSBuild WriteCodeFragment sınıfı tarafından oluşturuldu.
