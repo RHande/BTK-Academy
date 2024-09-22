@@ -747,4 +747,3 @@ using (StreamWriter sr1 = File.AppendText("my.txt"))
 File.WriteAllText("my.txt", "Hello World");//Writes "Hello World" to the file and deletes the previous content of the file
 File.AppendAllText("my.txt", " How are you?");//Appends " How are you?" to the file
 */
-

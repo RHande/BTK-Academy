@@ -1,0 +1,15 @@
+/Users/hande/RiderProjects/BTK Academy/ThrowExeption/bin/Debug/net8.0/ThrowExeption
+/Users/hande/RiderProjects/BTK Academy/ThrowExeption/bin/Debug/net8.0/ThrowExeption.deps.json
+/Users/hande/RiderProjects/BTK Academy/ThrowExeption/bin/Debug/net8.0/ThrowExeption.runtimeconfig.json
+/Users/hande/RiderProjects/BTK Academy/ThrowExeption/bin/Debug/net8.0/ThrowExeption.dll
+/Users/hande/RiderProjects/BTK Academy/ThrowExeption/bin/Debug/net8.0/ThrowExeption.pdb
+/Users/hande/RiderProjects/BTK Academy/ThrowExeption/obj/Debug/net8.0/ThrowExeption.GeneratedMSBuildEditorConfig.editorconfig
+/Users/hande/RiderProjects/BTK Academy/ThrowExeption/obj/Debug/net8.0/ThrowExeption.AssemblyInfoInputs.cache
+/Users/hande/RiderProjects/BTK Academy/ThrowExeption/obj/Debug/net8.0/ThrowExeption.AssemblyInfo.cs
+/Users/hande/RiderProjects/BTK Academy/ThrowExeption/obj/Debug/net8.0/ThrowExeption.csproj.CoreCompileInputs.cache
+/Users/hande/RiderProjects/BTK Academy/ThrowExeption/obj/Debug/net8.0/ThrowExeption.sourcelink.json
+/Users/hande/RiderProjects/BTK Academy/ThrowExeption/obj/Debug/net8.0/ThrowExeption.dll
+/Users/hande/RiderProjects/BTK Academy/ThrowExeption/obj/Debug/net8.0/refint/ThrowExeption.dll
+/Users/hande/RiderProjects/BTK Academy/ThrowExeption/obj/Debug/net8.0/ThrowExeption.pdb
+/Users/hande/RiderProjects/BTK Academy/ThrowExeption/obj/Debug/net8.0/ThrowExeption.genruntimeconfig.cache
+/Users/hande/RiderProjects/BTK Academy/ThrowExeption/obj/Debug/net8.0/ref/ThrowExeption.dll
